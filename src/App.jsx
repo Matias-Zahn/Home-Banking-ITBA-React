@@ -1,11 +1,11 @@
-import "./App.css";
+import "./assets/styles/index.css";
+import Navbar from "./components/Navbar/Header"
 
 function App() {
   return (
-    <>
-      {" "}
-      <h1>Hola mundo</h1>
-    </>
+    <div className="container">
+      <Navbar />
+    </div>
   );
 }
 
