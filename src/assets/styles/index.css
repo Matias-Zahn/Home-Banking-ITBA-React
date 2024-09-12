@@ -6,14 +6,12 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: sans-serif;
-  background-color: rgb(92, 91, 88);
+  background-color: blanchedalmond;
 }
 
 /*color a modo de ejemplo (lo puse solamente para hacer notar el header, sacar si hace falta)*/
 .container {
-  width: 100vw;
-  min-height: 100vh;
-  background-color: beige;
+  /* VER CONTAINER!!!!!!!!!!!!!!!!!!!! */
 }

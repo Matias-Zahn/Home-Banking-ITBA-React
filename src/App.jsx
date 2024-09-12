@@ -1,19 +1,20 @@
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Conversor, Cuentas, Prestamos, Transferencias } from "./pages/index";
 import "./assets/styles/index.css";
-import Navbar from "./components/Navbar/Header";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Contact from "./pages/Contact";
-import About from "./pages/About";
-import Products from "./pages/Products";
+import Sidebar from "./components/Sidebar";
+import Header from "./components/Header";
+
 function App() {
   return (
     <div className="container">
       <Router>
-        <Navbar />
-
+        <Header />
+        <Sidebar />
         <Routes>
-          <Route path="/productos" element={<Products />} />
-          <Route path="/nosotros" element={<About />} />
-          <Route path="/contacto" element={<Contact />} />
+          <Route path="/cuentas" element={<Cuentas />} />
+          <Route path="/prestamos" element={<Prestamos />} />
+          <Route path="/transferencias" element={<Transferencias />} />
+          <Route path="/conversor" element={<Conversor />} />
         </Routes>
       </Router>
     </div>
