@@ -1,13 +1,17 @@
-import logo_black from "../assets/images/itbank_black.png";
 import "../assets/styles/header.css";
+import "../assets/styles/index.css";
+import Menuicons from "./Icons/MenuIcons";
+
 
 function Header() {
   return (
-    <div className="header">
-      <a href="../../../index.html">
-        <img src={logo_black} alt="" className="logo" />
-      </a>
-    </div>
+    <header>
+      <div className="name-page">
+        <Menuicons/>
+        <h1>ITBANK</h1>
+      </div>
+    </header>
+    
   );
 }
 export default Header;
