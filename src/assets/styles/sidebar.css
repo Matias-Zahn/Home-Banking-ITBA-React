@@ -2,9 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 15%;
-  background-color: white;
-  overflow: hidden;
   padding: 20px 15px;
   transition: width 0.5s ease, backgound-color 0.3s ease, left 0.5s ease;
 }

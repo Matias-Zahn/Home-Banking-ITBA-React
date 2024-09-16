@@ -7,13 +7,7 @@ function Sidebar() {
       <nav className="navbar">
         <ul>
           <li>
-            <Link to="/inicio">
-              <ion-icon name="home-outline"></ion-icon>
-              <span>Inicio</span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/cuentas">
+            <Link to="/cuenta">
               <ion-icon name="newspaper-outline"></ion-icon>
               <span>Cuentas</span>
             </Link>
@@ -41,4 +35,4 @@ function Sidebar() {
     </div>
   );
 }
-export default Sidebar;
+export { Sidebar };

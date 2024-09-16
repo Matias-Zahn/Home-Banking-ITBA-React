@@ -1,4 +1,11 @@
+import { Header, Sidebar } from "../components/index";
+
 function Transferencias() {
-  return <div>Transferencias</div>;
+  return (
+    <main>
+      <Header />
+      <Sidebar />
+    </main>
+  );
 }
 export { Transferencias };

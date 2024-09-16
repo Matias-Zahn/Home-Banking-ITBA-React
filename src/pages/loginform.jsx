@@ -1,36 +1,39 @@
-import React, { useState } from 'react';
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
   const [formData, setFormData] = useState({
-    dni: '',
-    usuario: '',
-    clave: '',
+    dni: "",
+    usuario: "",
+    clave: "",
     recordar: false,
   });
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
+
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData({
       ...formData,
-      [name]: type === 'checkbox' ? checked : value,
+      [name]: type === "checkbox" ? checked : value,
     });
   };
 
   const validateForm = () => {
     const { dni, usuario, clave } = formData;
     if (!dni || !usuario || !clave) {
-      setError('Todos los campos son obligatorios');
+      setError("Todos los campos son obligatorios");
       return false;
     }
-    setError('');
+    setError("");
     return true;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      console.log('Form Data:', formData);
+      navigate("/cuenta");
     }
   };
 
@@ -46,7 +49,12 @@ const LoginForm = () => {
           </div>
           <form className="login__container__form" onSubmit={handleSubmit}>
             <div className="login__container__form__form-group">
-              <label className="login__container__form__form-group--label" htmlFor="dni">DNI:</label>
+              <label
+                className="login__container__form__form-group--label"
+                htmlFor="dni"
+              >
+                DNI:
+              </label>
               <input
                 className="login__container__form__form-group--input"
                 type="text"
@@ -59,7 +67,12 @@ const LoginForm = () => {
               />
             </div>
             <div className="login__container__form__form-group">
-              <label className="login__container__form__form-group--label" htmlFor="usuario">Usuario:</label>
+              <label
+                className="login__container__form__form-group--label"
+                htmlFor="usuario"
+              >
+                Usuario:
+              </label>
               <input
                 className="login__container__form__form-group--input"
                 type="text"
@@ -72,7 +85,12 @@ const LoginForm = () => {
               />
             </div>
             <div className="login__container__form__form-group">
-              <label className="login__container__form__form-group--label" htmlFor="clave">Contraseña:</label>
+              <label
+                className="login__container__form__form-group--label"
+                htmlFor="clave"
+              >
+                Contraseña:
+              </label>
               <input
                 className="login__container__form__form-group--input"
                 type="password"
@@ -93,19 +111,32 @@ const LoginForm = () => {
                 checked={formData.recordar}
                 onChange={handleChange}
               />
-              <label className="login__container__form__form-group--label__checkbox-group" htmlFor="recordar">Recordar tus datos</label>
+              <label
+                className="login__container__form__form-group--label__checkbox-group"
+                htmlFor="recordar"
+              >
+                Recordar tus datos
+              </label>
             </div>
             {error && <p className="error-message">{error}</p>}
-            <button className="login__container__form--button" type="submit">Iniciar sesión</button>
+            <button className="login__container__form--button" type="submit">
+              Iniciar sesión
+            </button>
           </form>
           <div className="regis">
             <p className="regis__p">¿Aún no tienes una cuenta?</p>
-            <a className="login__container__form--a" href="index.html">Regístrate acá</a>
+            <a className="login__container__form--a" href="index.html">
+              Regístrate acá
+            </a>
           </div>
           <div className="links">
-            <a className="login__container__form--a" href="#">Olvidé mi usuario y/o clave</a>
+            <a className="login__container__form--a" href="#">
+              Olvidé mi usuario y/o clave
+            </a>
             <br />
-            <a className="login__container__form--a" href="#">Bloqueé mi usuario</a>
+            <a className="login__container__form--a" href="#">
+              Bloqueé mi usuario
+            </a>
           </div>
         </div>
       </div>

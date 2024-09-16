@@ -1,24 +1,21 @@
-import "./assets/styles/index.css";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import "./assets/styles/index.css";
 import { Conversor, Cuentas, Prestamos, Transferencias } from "./pages/index";
-import Sidebar from "./components/Sidebar";
-import Header from "./components/Header";
+import LoginForm from "./pages/loginform";
 
 function App() {
   return (
-    <>
-    <Header/>
-      <div className="container">
-        <Router>
-          <Routes>
-            <Route path="/cuentas" element={<Cuentas />} />
-            <Route path="/prestamos" element={<Prestamos />} />
-            <Route path="/transferencias" element={<Transferencias />} />
-            <Route path="/conversor" element={<Conversor />} />
-          </Routes>
-        </Router>
-      </div>
-    </>
+    <div className="container">
+      <Router>
+        <Routes>
+          <Route path="/cuenta" element={<Cuentas />} />
+          <Route path="/prestamos" element={<Prestamos />} />
+          <Route path="/transferencias" element={<Transferencias />} />
+          <Route path="/conversor" element={<Conversor />} />
+          <Route path="/login" element={<LoginForm />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 

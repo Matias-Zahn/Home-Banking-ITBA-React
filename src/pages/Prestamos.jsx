@@ -1,4 +1,11 @@
+import { Header, Sidebar } from "../components/index";
+
 function Prestamos() {
-  return <div>Prestamos</div>;
+  return (
+    <main>
+      <Header />
+      <Sidebar />
+    </main>
+  );
 }
 export { Prestamos };
