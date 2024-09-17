@@ -1,7 +1,6 @@
-import { Header, Sidebar } from "../components/index";
 import "../assets/styles/cuentas.css";
-import CardButtoms from "../components/cuenta/CardButtoms";
 import Card from "../components/cuenta/Card";
+import { Header, Sidebar } from "../components/index";
 function Cuentas() {
   return (
     <main>
@@ -12,12 +11,11 @@ function Cuentas() {
 
           <div className="content-items">
             <h1>Desde cuentas</h1>
-            <div>
+            <div className="content-items-card">
               <Card />
-
-              <div>
-                <CardButtoms />
-              </div>
+              <Card />
+              <Card />
+              <Card />
             </div>
           </div>
         </div>
