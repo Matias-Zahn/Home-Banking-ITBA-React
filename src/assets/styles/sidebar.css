@@ -3,6 +3,8 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 15px;
+  background-color: blue;
+  height: 100vh;
   transition: width 0.5s ease, backgound-color 0.3s ease, left 0.5s ease;
 }
 
@@ -11,11 +13,8 @@
 }
 
 span {
-  width: 100px;
   white-space: nowrap;
   font-size: 18px;
-  text-align: left;
-  opacity: 1;
   color: black;
   transition: opacity 0.5s ease, width 0.5s ease;
 }

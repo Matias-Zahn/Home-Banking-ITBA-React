@@ -2,12 +2,14 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./assets/styles/index.css";
 import { Conversor, Cuentas, Prestamos, Transferencias } from "./pages/index";
 import LoginForm from "./pages/loginform";
+import Redirection from "./pages/Redirection";
 
 function App() {
   return (
     <div className="container">
       <Router>
         <Routes>
+          <Route path="/" element={<Redirection />} />
           <Route path="/cuenta" element={<Cuentas />} />
           <Route path="/prestamos" element={<Prestamos />} />
           <Route path="/transferencias" element={<Transferencias />} />
