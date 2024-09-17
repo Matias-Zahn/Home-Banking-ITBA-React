@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "../assets/styles/loginform.css";
 
 const LoginForm = () => {
   const [formData, setFormData] = useState({

@@ -1,3 +1,8 @@
+:root{
+  --color-sidebar:#ededed;
+  --color-text-menu: #3d3838;
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -45,6 +50,13 @@ span.oculto {
   align-items: center;
   text-decoration: none;
   border-radius: 10px;
+  background-color: var(--color-sidebar);
+  color: var(--color-text-menu);
+}
+
+.sidebar .navbar a:hover{
+  background-color: var(--color-menu-hover);
+  color: var(--color-menu-hover-text);
 }
 
 .sidebar .navbar .ionicon {

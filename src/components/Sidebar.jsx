@@ -6,7 +6,7 @@ import  LoansIcons from "./Icons/LoansIcons";
 import  ConverterIcons from "./Icons/ConverterIcons";
 export function Sidebar({sidebarOpen, setSidebarOpen }) {
   return (
-    <div className="sidebar">
+    <div className="sidebar ">
       <nav className="navbar">
         <ul>
           <li>

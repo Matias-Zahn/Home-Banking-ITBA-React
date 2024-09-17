@@ -1,8 +1,6 @@
-import { BrowserRouter, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { useState } from "react";
 import "./assets/styles/index.css";
-import LoginForm from "./pages/loginform";
-import Redirection from "./pages/Redirection";
 import { MyRoutes } from "./routers/Routes";
 import { Header} from "./components/Header";
 import  styled  from "styled-components";
