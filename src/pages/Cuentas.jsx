@@ -4,10 +4,8 @@ import { Header, Sidebar } from "../components/index";
 function Cuentas() {
   return (
     <main>
-      <Header />
       <section className="row">
         <div className="content">
-          <Sidebar />
 
           <div className="content-items">
             <h1>Desde cuentas</h1>

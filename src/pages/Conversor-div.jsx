@@ -1,4 +1,4 @@
-import Footer from "../components/Footer";
+import {Footer} from "../components/Footer";
 import { Header, Sidebar } from "../components/index";
 
 function Conversor() {

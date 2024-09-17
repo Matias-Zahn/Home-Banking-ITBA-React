@@ -1,24 +1,34 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { useState } from "react";
 import "./assets/styles/index.css";
-import { Conversor, Cuentas, Prestamos, Transferencias } from "./pages/index";
 import LoginForm from "./pages/loginform";
 import Redirection from "./pages/Redirection";
+import { MyRoutes } from "./routers/Routes";
+import { Header} from "./components/Header";
+import  styled  from "styled-components";
+import { Sidebar } from "./components/Sidebar";
+import { Footer} from "../src/components/Footer";
 
 function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(true);
   return (
-    <div className="container">
-      <Router>
-        <Routes>
-          <Route path="/" element={<Redirection />} />
-          <Route path="/cuenta" element={<Cuentas />} />
-          <Route path="/prestamos" element={<Prestamos />} />
-          <Route path="/transferencias" element={<Transferencias />} />
-          <Route path="/conversor" element={<Conversor />} />
-          <Route path="/login" element={<LoginForm />} />
-        </Routes>
-      </Router>
-    </div>
+    <>
+      <Header/>
+      <BrowserRouter>
+        <Container>
+          <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}/>
+          <MyRoutes/>
+        </Container>
+      </BrowserRouter>
+      <Footer/>
+    </>
   );
 }
+
+const Container = styled.div`
+  display: flex;
+  height: 100%;
+`;
+
 
 export default App;

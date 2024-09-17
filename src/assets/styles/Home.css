@@ -1,0 +1,104 @@
+div .form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .form {
+    width: 100%;
+    max-width: 1000px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  h2 {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .input_simulador_label {
+    display: block;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center; /* Centra el texto del label */
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    margin-top: 5px; /* Ajusta el margen superior del input si es necesario */
+  }
+  
+  fieldset {
+    width: 45%; /* Ajustamos el tamaño del form */
+    padding: 0 10px 0 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  button {
+    background-color: #156077;
+    color: white;
+    width: 150px; /* Más grande para parecerse más al botón en la imagen */
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 10px auto;
+    display: block; /* Centramos el botón */
+  }
+  
+  button:hover {
+    background-color: #007694;
+    transform: translateY(-1px);
+  }
+  
+  .tab {
+    width: 45%; /* Ajustamos el tamaño de la tabla */
+    border-collapse: collapse;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  thead {
+    background-color: #eaeaea;
+    font-weight: bold;
+  }
+  
+  tr {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  td {
+    padding: 12px;
+    border-left: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  td:first-child {
+    border-left: none;
+  }
+  
+  tfoot td {
+    font-weight: bold;
+  }
+  
+  tfoot {
+    background-color: #eaeaea;
+  }
+  

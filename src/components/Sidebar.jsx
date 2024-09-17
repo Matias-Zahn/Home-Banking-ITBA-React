@@ -1,32 +1,35 @@
 import { Link } from "react-router-dom";
 import "../assets/styles/sidebar.css";
-
-function Sidebar() {
+import  AccountIcons  from "./Icons/AccountIcons";
+import  TransfersIcons from "./Icons/TransfersIcons";
+import  LoansIcons from "./Icons/LoansIcons";
+import  ConverterIcons from "./Icons/ConverterIcons";
+export function Sidebar({sidebarOpen, setSidebarOpen }) {
   return (
     <div className="sidebar">
       <nav className="navbar">
         <ul>
           <li>
             <Link to="/cuenta">
-              <ion-icon name="newspaper-outline"></ion-icon>
+              <AccountIcons/>
               <span>Cuentas</span>
             </Link>
           </li>
           <li>
             <Link to="/transferencias">
-              <ion-icon name="swap-horizontal-outline"></ion-icon>
+              <TransfersIcons/>
               <span>Transferencias</span>
             </Link>
           </li>
           <li>
             <Link to="/prestamos">
-              <ion-icon name="server-outline"></ion-icon>
+              <LoansIcons/>
               <span>Prestamos</span>
             </Link>
           </li>
           <li>
             <Link to="/conversor">
-              <ion-icon name="swap-horizontal-outline"></ion-icon>
+              <ConverterIcons/>
               <span>Conversor de divisas</span>
             </Link>
           </li>
@@ -35,4 +38,3 @@ function Sidebar() {
     </div>
   );
 }
-export { Sidebar };

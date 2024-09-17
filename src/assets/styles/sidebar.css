@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 15px;
-  background-color: white;
+  width: 250px;
   height: 100vh;
+  overflow:hidden;
+  padding: 20px 15px;
+  background-color: #ededed;
   transition: width 0.5s ease, backgound-color 0.3s ease, left 0.5s ease;
 }
 
@@ -13,9 +15,12 @@
 }
 
 span {
+  width: 100px;
   white-space: nowrap;
   font-size: 18px;
-  color: black;
+  text-align: left;
+  opacity: 1;
+  color: #3d3838;
   transition: opacity 0.5s ease, width 0.5s ease;
 }
 
@@ -26,13 +31,14 @@ span.oculto {
 
 /*-->Menu navegacion*/
 
-.sidebar .navbar li {
+.sidebar .navbar li{
   list-style: none;
   display: flex;
   margin-bottom: 5px;
+  
 }
 
-.sidebar .navbar a {
+.sidebar .navbar a{
   width: 100%;
   height: 45px;
   display: flex;
@@ -41,8 +47,10 @@ span.oculto {
   border-radius: 10px;
 }
 
-.sidebar .navbar ion-icon {
+.sidebar .navbar .ionicon {
   min-width: 50px;
-  font-size: 20px;
+  font-size: 30px;
   cursor: pointer;
+  height: 20px;
+
 }
