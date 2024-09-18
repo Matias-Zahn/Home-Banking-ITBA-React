@@ -1,30 +1,31 @@
 footer {
-    background-color: #ededed;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    text-decoration: none;
+  background-color: #ededed;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  grid-column: 1 / span 2;
 }
-footer a{
-    text-decoration: none;
-    color: #000000;
+footer a {
+  text-decoration: none;
+  color: #000000;
 }
 
-.politica p{
-    margin: 0;
+.politica p {
+  margin: 0;
 }
-.social-icons{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 .social-icons a {
-    margin: 0 10px;
+  margin: 0 10px;
 }
-.fa-brands{
-    font-size: 25px;
+.fa-brands {
+  font-size: 25px;
 }

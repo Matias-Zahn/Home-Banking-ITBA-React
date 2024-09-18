@@ -12,20 +12,21 @@ function App() {
   return (
     <>
       <Header />
-      <BrowserRouter>
-        <Container>
+      <Container>
+        <BrowserRouter>
           <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
           <MyRoutes />
-        </Container>
-      </BrowserRouter>
-      <Footer />
+        </BrowserRouter>
+        <Footer />
+      </Container>
     </>
   );
 }
-
 const Container = styled.div`
-  display: flex;
-  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 250px 1fr;
+  height: 94vh;
 `;
 
 export default App;

@@ -8,11 +8,11 @@
   flex-direction: column;
   justify-content: space-between;
   width: 250px;
-  height: 100vh;
   overflow: hidden;
   padding: 20px 15px;
   background-color: #ededed;
   transition: width 0.5s ease, backgound-color 0.3s ease, left 0.5s ease;
+  grid-row: 1 / span 3;
 }
 
 .mini-sidebar {

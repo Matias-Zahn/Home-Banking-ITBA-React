@@ -1,49 +1,41 @@
-:root{
-  --color-sidebar:#ededed;
+:root {
+  --color-sidebar: #ededed;
   --color-text: #ededed;
   --color-text-menu: #3d3838;
   --color-boton: #221d1d;
   --color-boton-texto: #ededed;
-  --color-menu-hover:rgb(201, 197, 197);
-  --color-menu-hover-text:rgb(0,0,0);
-  --color-scroll: rgb(192,192,192);
-  --color-scroll-hover: rgb(134,134,134);
-
-
-  
-
-
+  --color-menu-hover: rgb(201, 197, 197);
+  --color-menu-hover-text: rgb(0, 0, 0);
+  --color-scroll: rgb(192, 192, 192);
+  --color-scroll-hover: rgb(134, 134, 134);
 }
 
-header{
+header {
   padding-left: 20px;
   padding-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ededed;
-  
 }
 
 /*-->Nombre de la pagina*/
-header .name-page{
+header .name-page {
   width: 100%;
   height: 45px;
   display: flex;
   align-items: center;
-
-
+  grid-column: 1;
 }
 
-header .name-page .ionicon{
-
+header .name-page .ionicon {
   min-width: 50px;
   font-size: 30px;
   cursor: pointer;
   height: 30px;
 }
 
-header .name-page span{
+header .name-page span {
   margin-left: 5px;
   font-size: 18px;
 }
