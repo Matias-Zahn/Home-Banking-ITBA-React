@@ -61,6 +61,18 @@ export function Sidebar({ sidebarOpen, setSidebarOpen }) {
               </span>
             </Link>
           </li>
+          <li>
+            <Link to="/pagar-servicios">
+              <ConverterIcons />
+              <span
+                style={{
+                  color: currentLocation === "/pagar-servicios" ? "#6495ed" : "black",
+                }}
+              >
+                Pago de servicios
+              </span>
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

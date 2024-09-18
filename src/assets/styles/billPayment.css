@@ -1,0 +1,83 @@
+.content-main-billPayment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+  
+  .content-billPayment {
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    width: 100%;
+  }
+  
+  .content-billPayment-items {
+    display: grid;
+    gap: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bill-payment-form {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  input:focus {
+    border-color: #6495ed;
+    outline: none;
+  }
+  
+  button {
+    padding: 0.75rem 1.5rem;
+    background-color: #6495ed;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #4169e1;
+  }
+  
+  @media (max-width: 600px) {
+    .content-billPayment {
+      padding: 1rem;
+    }
+  
+    .content-billPayment-items {
+      padding: 1rem;
+    }
+  
+    .bill-payment-form {
+      gap: 1rem;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
