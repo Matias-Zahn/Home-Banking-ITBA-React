@@ -1,6 +1,13 @@
 .content {
-  display: flex;
+  display: grid;
+  justify-content: center;
   gap: 1rem;
+  padding: 2rem;
+}
+
+.content-items {
+  display: grid;
+  gap: 2rem;
 }
 
 .content-items-card {
@@ -28,6 +35,6 @@
   }
 
   .cbu {
-    color: cornflowerblue;
+    color: #6495ed;
   }
 }

@@ -1,23 +1,21 @@
 import "../assets/styles/cuentas.css";
 import Card from "../components/cuenta/Card";
-import { Header, Sidebar } from "../components/index";
+import History from "../components/cuenta/History";
 function Cuentas() {
   return (
     <main>
-      <section className="row">
-        <div className="content">
-
-          <div className="content-items">
-            <h1>Desde cuentas</h1>
-            <div className="content-items-card">
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-            </div>
+      <section className="content">
+        <div className="content-items">
+          <h1>Desde cuentas</h1>
+          <div className="content-items-card">
+            <Card />
+            <Card />
+            <Card />
+            <Card />
           </div>
         </div>
-        <h2>Footer</h2>
+
+        <History />
       </section>
     </main>
   );
